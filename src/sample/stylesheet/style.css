@@ -1,0 +1,45 @@
+.parent{
+    -fx-background-color: #151928;
+
+}
+.exit_bar{
+    -fx-background-color: #DEDEE4;
+}
+.log_pane{
+    /*-fx-background-color: #151928;*/
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+.log_button{
+    -fx-background-color: #1e90ff;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-text-fill: #FFFFFF;
+    -fx-border-width: 1px;
+    -fx-font-size: 20px;
+}
+.log_button:hover{
+    -fx-background-color: #daa520;
+    -fx-text-fill: #151928;
+}
+.log_button:pressed{
+    -fx-background-color: #66cdaa;
+}
+.log_label{
+    -fx-text-fill: #76eec6;
+}
+.tf_box{
+    -fx-background-color: transparent;
+    -fx-border-color: gray;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-text-fill: gray;
+    -fx-font-size: 16px;
+}
+.title_label{
+    -fx-text-fill: #000000;
+}
+
+

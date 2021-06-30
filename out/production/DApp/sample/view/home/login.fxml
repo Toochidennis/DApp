@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane nodeOrientation="LEFT_TO_RIGHT"  prefHeight="478.0"
+            prefWidth="377.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Controller">
+   <children>
+      <Pane layoutY="-1.0" prefHeight="593.0" prefWidth="371.0" styleClass="log_pane" stylesheets="@../../stylesheet/style.css" AnchorPane.bottomAnchor="-7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-1.0">
+         <children>
+            <Label alignment="CENTER" layoutX="73.0" layoutY="42.0" prefHeight="48.0" prefWidth="214.0" styleClass="title_label" text="Log to your account">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" layoutX="4.0" layoutY="135.0" prefHeight="54.0" prefWidth="377.0">
+               <children>
+                  <TextField fx:id="txtUsername" prefHeight="39.0" prefWidth="427.0" promptText="username" styleClass="tf_box" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="15.0" right="15.0" top="15.0" />
+                     </HBox.margin></TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="4.0" layoutY="199.0" prefHeight="56.0" prefWidth="377.0">
+               <children>
+                  <PasswordField fx:id="txtPassword" prefHeight="41.0" prefWidth="510.0" promptText="password" styleClass="tf_box" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="15.0" right="15.0" top="20.0" />
+                     </HBox.margin></PasswordField>
+               </children>
+            </HBox>
+            <Label layoutX="242.0" layoutY="319.0" prefHeight="48.0" prefWidth="123.0" style="-fx-text-fill: #1e90ff;" text="Forgot Password?" textFill="#f2e9e9">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="25.0" fitWidth="35.0" layoutX="352.0" layoutY="2.0" nodeOrientation="INHERIT" onMouseClicked="#exitApp" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/close_window.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="178.0" layoutY="367.0" prefHeight="25.0" prefWidth="25.0" text="or" textFill="#e1d5d5">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Separator layoutX="17.0" layoutY="379.0" prefHeight="4.0" prefWidth="152.0" />
+            <Separator layoutX="201.0" layoutY="379.0" prefHeight="4.0" prefWidth="159.0" />
+            <Label fx:id="lblError" layoutX="19.0" layoutY="318.0" prefHeight="25.0" prefWidth="347.0" style="-fx-font-style: italic;" textFill="#e14343">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="95.0" layoutY="80.0" prefHeight="20.0" prefWidth="171.0" text="Explore your coding skills">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="17.0" layoutY="270.0" mnemonicParsing="false" onMouseClicked="#loginAction" prefHeight="39.0" prefWidth="347.0" styleClass="log_button" text="Login" />
+            <Button layoutX="19.0" layoutY="399.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="347.0" styleClass="log_button" text="Create Admin" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

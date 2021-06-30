@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="422.0" prefWidth="759.0" styleClass="parent" stylesheets="@../../stylesheet/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.HomeController">
+   <children>
+      <AnchorPane layoutY="23.0" prefHeight="27.0" prefWidth="759.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="372.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="23.0">
+         <children>
+            <MenuBar layoutY="2.0" prefHeight="30.0" prefWidth="759.0" styleClass="tools-bar" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <menus>
+                <Menu mnemonicParsing="false" styleClass="menu-bar" text="Student">
+                  <items>
+                    <MenuItem fx:id="menuAddStudent" mnemonicParsing="false" onAction="#studentAction" text="Add Student" />
+                        <MenuItem fx:id="menuRemoveStudent" mnemonicParsing="false" onAction="#studentAction" text="Remove Student" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem fx:id="menuEditStudent" mnemonicParsing="false" onAction="#studentAction" text="Edit Student" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem fx:id="menuViewStudent" mnemonicParsing="false" onAction="#studentAction" text="View Student" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" onAction="#quitAction" text="Quit" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Course">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#courseAction" text="Add Course" />
+                        <MenuItem mnemonicParsing="false" onAction="#courseAction" text="Remove Course" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" onAction="#courseAction" text="Edit Course" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" onAction="#courseAction" text="View Course" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Payment">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Make Payment" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="View Payment" />
+                        <MenuItem mnemonicParsing="false" text="Print Payment Reciept" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Instructor">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#instructorAction" text="Add Instructor" />
+                        <MenuItem mnemonicParsing="false" onAction="#instructorAction" text="Remove Instructor" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" onAction="#instructorAction" text="Edit Instructor" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" onAction="#instructorAction" text="View Instructor" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Help">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Contact Digital Dreams" />
+                        <MenuItem mnemonicParsing="false" text="About" />
+                     </items>
+                  </Menu>
+              </menus>
+               <padding>
+                  <Insets left="10.0" right="10.0" top="5.0" />
+               </padding>
+            </MenuBar>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="241.0" layoutY="-72.0" prefHeight="27.0" prefWidth="759.0" styleClass="exit_bar" AnchorPane.bottomAnchor="395.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="25.0" fitWidth="35.0" layoutX="734.0" onMouseClicked="#exitApp" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/close_window.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button layoutX="627.0" layoutY="65.0" mnemonicParsing="false" onMouseClicked="#signOut" prefHeight="39.0" prefWidth="118.0" style="-fx-background-color: transparent; -fx-border-color: #FFFFFF; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-text-fill: #DEDEE4;" text="Sign Out" />
+   </children>
+</AnchorPane>
